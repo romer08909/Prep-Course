@@ -58,8 +58,8 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-
-}return x==y
+  return x==y
+}
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -79,8 +79,8 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-
-}return num>50
+  return num>50
+}
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
@@ -145,13 +145,15 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero ===0) return false;
-}if (numero >0) return "Es positivo"
+if (numero >0) return "Es positivo"
 if (numero <0)  return "Es negativo"
+}
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-}return "str!"
+  return "str!"
+}
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
