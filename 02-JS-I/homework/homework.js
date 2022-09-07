@@ -215,7 +215,7 @@ function esVocal(letra){
 // --------------------------------
 
 module.exports = {
-  NuevaString,
+  nuevaString,
   nuevoNum,
   nuevoBool,
   nuevaResta,
