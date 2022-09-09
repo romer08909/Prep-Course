@@ -1,5 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+const { saludo } = require("../../03-JS-II/homework/homework");
+
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "edy";
 
@@ -173,7 +175,12 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola Antonio!"
+  function saludo(nombre){
+    console.log("martin")
+
+  }
+
+  return `Hola , $(Antonio)!`
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
