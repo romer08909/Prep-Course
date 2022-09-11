@@ -1,7 +1,5 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
-const { saludo } = require("../../03-JS-II/homework/homework");
-
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "edy";
 
@@ -168,8 +166,9 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  nombre= "epellido"
-  return  `nombre ${apellido}`
+  dato1= "epellido"
+  dato2= "nombre"
+   `nombre ${dato1}`
 }
 
 function obtenerSaludo(nombre) {
@@ -177,8 +176,8 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   function saludo(nombre)
-  Nombre="martin"
-  return `Hola , $(nombre)!`
+  nombre = "martin";
+   `Hola , $(nombre)!`
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
