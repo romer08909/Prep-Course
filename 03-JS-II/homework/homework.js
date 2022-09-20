@@ -11,7 +11,7 @@ function mayoriaDeEdad (edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  return edad >= 18 ? "Allowed" : "not allowed"
+  return edad >= 18 ? "Allowed" : "Not allowed"
 
 }
  
@@ -40,9 +40,9 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código: 
   switch(idioma){
-case alema:
+case aleman:
 return "Guten Tag!";
-case mandari:
+case mandarin:
   return "Ni Hao!";
   case ingles: 
   return "hello!";
@@ -62,13 +62,13 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color){
 case blue:
-return "this is blue";
+return "This is blue";
  case red:
-return "this is red";
+return "This is red";
  case green:
-return "this is green";
+return "This is green";
  case orange:
-return "this is orange";
+return "This is orange";
  case defaul :
 return "Color not found";
  }
@@ -124,7 +124,7 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 > num2 && num1 > num3) return"Número 1 es mayor y positivo"
   if (num1 === 0 || num2 === 0 || num3 === 0 ) return "Error"
   if (num3 > num2 && num1 > num1) return num3 + 1
-  return false
+ return false
 }
 
 function esPrimo(numero) {
@@ -169,14 +169,15 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  let numero = 5
-  res = numero
+let n = 8;
+ let  res = 0;
   do  {
-if (numero = 5)
-   numero++
-}while(numero < 8){
+n = n - 1
+ res = numero + 5
+} while(n > 0)
+  
   return res
-}
+
 }
   
 

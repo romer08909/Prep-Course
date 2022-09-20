@@ -149,10 +149,10 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero === 0) return false;
-  if(numero > 10)  ("es positivo");
-  if(numero < -1) es ("es negativo");
-  return "Es positivo";
+  if (numero === 0) return false;
+  if (numero > 0)  return "Es positivo"
+  if (numero < 0)  return "Es negativo"
+ 
 }
 
 function agregarSimboloExclamacion(str) {
@@ -166,18 +166,15 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  dato1= "epellido";
-  dato2= "nombre";
-   `nombre ${dato1}`;
+  
+ return `${nombre} ${apellido}`
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  function saludo(nombre)
-  nombre = "martin";
-   `Hola , $(nombre)!`
+  return `Hola ${nombre}!`
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
