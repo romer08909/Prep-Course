@@ -40,13 +40,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código: 
   switch(idioma){
-case aleman:
+case "aleman":
 return "Guten Tag!";
-case mandarin:
+case "mandarin":
   return "Ni Hao!";
-  case ingles: 
-  return "hello!";
-  default: return "hola!";
+  case "ingles": 
+  return "Hello!";
+  default: return "Hola!";
     
   }
 
@@ -61,16 +61,15 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color){
-case blue:
+case "blue":
 return "This is blue";
- case red:
+ case "red":
 return "This is red";
- case green:
+ case "green":
 return "This is green";
- case orange:
+ case "orange":
 return "This is orange";
- case defaul :
-return "Color not found";
+default: return "Color not found";
  }
 }
 
@@ -109,7 +108,7 @@ function fizzBuzz(numero) {
   // De lo contrario, devuelve el numero
  if (numero % 3 === 0 && numero % 5 ===0) return "fizzbuzz"
  if (numero % 3 ===0) return "fizz"
- if (numero % 3 ===0) return "buzz"
+ if (numero % 5 ===0) return "buzz"
  return numero
 }
 
@@ -120,11 +119,11 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if (num1 < 0 || num2 < 0 || num3 < 0 ) "Hay negativos "
-  if (num1 > num2 && num1 > num3) return"Número 1 es mayor y positivo"
-  if (num1 === 0 || num2 === 0 || num3 === 0 ) return "Error"
-  if (num3 > num2 && num1 > num1) return num3 + 1
- return false
+  if (num1 < 0 || num3 < 0 || num2 < 0 ) return  "Hay negativos"
+  if (num1 === 0 || num3 === 0 || num2 === 0 ) return "Error"
+  if (num3 > num1 && num3 > num2) return num3 + 1 
+  if (num1 > num2 && num1 > num2) return "Número 1 es mayor y positivo"
+  return false
 }
 
 function esPrimo(numero) {
@@ -133,7 +132,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if(numero === 0 || numero === 1) return false
+  if (numero === 0 || numero === 1) return false
   if (numero === 2 || numero === 3 || numero === 5 || numero === 7) return true
   if (numero % 2 === 0 || numero % 3 === 0 || numero % 5 === 0 || numero  % 7 === 0) return false
   return true
@@ -170,12 +169,12 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
 let n = 8;
- let  res = 0;
+ let  res = numero;
   do  {
-n = n - 1
- res = numero + 5
+    n = n - 1
+ res = res + 5
 } while(n > 0)
-  
+ 
   return res
 
 }
