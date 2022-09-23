@@ -9,6 +9,16 @@ function devolverPrimerElemento(array) {
 }
 
 
+
+function obtenerLargoDelArray(array) {
+  // Devuelve el largo de un array
+  // Tu código:
+  return array.length
+}
+
+
+
+
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
@@ -17,11 +27,7 @@ return array[array.length - 1]
 }
 
 
-function obtenerLargoDelArray(array) {
-  // Devuelve el largo de un array
-  // Tu código:
-  return array.length
-}
+
 
 
 function incrementarPorUno(array) {
@@ -47,7 +53,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
-  // Tu código:
+  // Tu código:[1,2,3,4,5,6,7,8], --> [74,1,2,3,4,5,6,7,8]
+  array.unshift(elemento) 
+  return array 
 }
 
 
@@ -57,20 +65,29 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+
+return palabras.join(" ");
+
 }
 
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
-  // Tu código:
+  // Tu código:[1,2,3,4,5,]
+return array.includes(elemento)
 }
 
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
-  // Tu código:
+  // Tu código: 
+  let acumu = 0;
+  for (let i = 0; 1 < numeros.length; i++) {
+    acumu = acumu + numeros[i]
+    }
+    return acumu
 }
 
 
@@ -78,6 +95,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+ 
 }
 
 
